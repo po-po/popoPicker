@@ -7,7 +7,7 @@
 - popoDatetime是建立在popoPicker之上的3D日期时间选择器，可自定义滚动循环，背景主题、位置等信息，具备时间选择、日期选择、日期时间同时选择的功能，具体配置请阅读参数文档。
 
 ## 滚轮样式
-![1](https://po-po.github.io/popoPicker/img/pic-01.PNG)](https://po-po.github.io/popoPicker/img/pic-01.PNG "1")
+[![demo](https://po-po.github.io/popoPicker/img/pic-1.png "1")](https://po-po.github.io/popoPicker/img/pic-1.png "1")
 
 ## 如何使用
 ```html
