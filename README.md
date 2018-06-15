@@ -1,6 +1,4 @@
-# Editor.md [Demo](https://po-po.github.io/popoPicker/ "Demo")
-
-## 项目简介
+## 项目简介 [在线预览](https://po-po.github.io/popoPicker/ "Demo")
 
 - popoPicker是一个仿ios的3D滚轮选择器，支持无限循环滚动，采用原生js，不依赖任何第三方库，速度更快；
 
