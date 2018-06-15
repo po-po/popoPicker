@@ -9,8 +9,6 @@
 ## 滚轮样式
 ![1](https://po-po.github.io/popoPicker/img/pic-01.png)](https://po-po.github.io/popoPicker/img/pic-01.png "1")
 
-
-
 ## 如何使用
 ```html
 <!-- 引入样式 -->
