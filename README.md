@@ -87,3 +87,9 @@ new popoDateTime('.js-datetime',{
 |save|Function|*|点击确定|
 |cancel|Function|*|点击取消|
 
+### License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2018, popo
+
