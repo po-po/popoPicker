@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>popoPicker</title>
+    <link href="css/popoPicker.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+</head>
+<body>
+<section class="page-header">
+    <h1 class="project-name">popoPicker</h1>
+    <h2 class="project-tagline">popoPicker是一个仿ios的3D滚轮选择器，支持无限循环滚动，采用原生js，不依赖任何第三方库，速度更快；popoDatetime是建立在popoPicker之上的3D日期时间选择器，可自定义滚动循环，背景主题、位置等信息，具备时间选择、日期选择、日期时间同时选择的功能，具体配置请阅读参数文档。</h2>
+    <a href="https://github.com/pages-themes/cayman" class="btn">View on GitHub</a>
+    <a href="https://github.com/pages-themes/cayman/zipball/master" class="btn">Download .zip</a>
+    <a href="https://github.com/pages-themes/cayman/tarball/master" class="btn">Download .tar.gz</a>
+
+</section>
+
+<div class="content">
+   <div class="main-box">
+       <div class="col flex-1">
+           <div class="phone-box">
+               <div class="screen">
+                   <header><p>popopicker</p></header>
+                   <div class="tit">Picker</div>
+                   <input class="inp js-picker" data-value="3" placeholder="请选择选项">
+                   <div class="tit">Date</div>
+                   <input class="inp js-date" placeholder="请选择日期">
+                   <div class="tit">Time</div>
+                   <input class="inp js-time" placeholder="请选择时间">
+                   <div class="tit">DateTime</div>
+                   <input class="inp js-datetime" placeholder="请选择日期时间">
+               </div>
+           </div>
+       </div>
+       <div class="col">
+          <div class="tb-wrap">
+              <div class="title">popoPicker</div>
+              <table class="tb">
+                  <thead>
+                  <tr>
+                      <th>属性<small>property</small></th>
+                      <th>类型<small>type</small></th>
+                      <th>默认<small>default</small></th>
+                      <th>描述<small>description</small></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>wheels</td>
+                      <td>Array</td>
+                      <td>[]</td>
+                      <td>
+                          <p>wheels为滚轮的数据内容</p>
+                          <p>例如：wheels: [{ infinite: false, selected: 3, data:[ {value:0,display:'选项一'}]}]</p>
+                          <p>infinit: bool 是否无限循环滚轮</p>
+                          <p>selected: Number 选中的value</p>
+                          <P>data: Array 滚轮数据</P>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>container</td>
+                      <td>String</td>
+                      <td>'body'</td>
+                      <td>选择器所在的父级</td>
+                  </tr>
+                  <tr>
+                      <td>scrollType</td>
+                      <td>String</td>
+                      <td>'3d'</td>
+                      <td>滚轮的显示模式，分2d,和3d</td>
+                  </tr>
+                  <tr>
+                      <td>background</td>
+                      <td>String</td>
+                      <td>'light'</td>
+                      <td>主题背景颜色</td>
+                  </tr>
+                  <tr>
+                      <td>display</td>
+                      <td>String</td>
+                      <td>'bottom'</td>
+                      <td>滚轮显示位置</td>
+                  </tr>
+                  <tr>
+                      <td>headTitle</td>
+                      <td>String</td>
+                      <td>''</td>
+                      <td>滚轮顶部标题</td>
+                  </tr>
+                  <tr>
+                      <td>init</td>
+                      <td>Function</td>
+                      <td>*</td>
+                      <td>初始加载完成后执行</td>
+                  </tr>
+                  <tr>
+                      <td>getResult</td>
+                      <td>Function</td>
+                      <td>*</td>
+                      <td>返回滚动时的结果</td>
+                  </tr>
+                  <tr>
+                      <td>save</td>
+                      <td>Function</td>
+                      <td>*</td>
+                      <td>点击确定</td>
+                  </tr>
+                  <tr>
+                      <td>cancel</td>
+                      <td>Function</td>
+                      <td>*</td>
+                      <td>点击取消</td>
+                  </tr>
+                  </tbody>
+              </table>
+              <div class="title">popoDateTime</div>
+              <table class="tb">
+                  <thead>
+                  <tr>
+                      <th>属性<small>property</small></th>
+                      <th>类型<small>type</small></th>
+                      <th>默认<small>default</small></th>
+                      <th>描述<small>description</small></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>container</td>
+                      <td>String</td>
+                      <td>'body'</td>
+                      <td>选择器所在的父级</td>
+                  </tr>
+                  <tr>
+                      <td>scrollType</td>
+                      <td>String</td>
+                      <td>'3d'</td>
+                      <td>滚轮的显示模式，分2d,和3d</td>
+                  </tr>
+                  <tr>
+                      <td>background</td>
+                      <td>String</td>
+                      <td>'light'</td>
+                      <td>主题背景颜色</td>
+                  </tr>
+                  <tr>
+                      <td>labelType</td>
+                      <td>String</td>
+                      <td>'symbol'</td>
+                      <td>滚轮label 类型有symbol符号，text文字，split分割线(需date和time同时存在)</td>
+                  </tr>
+                  <tr>
+                      <td>display</td>
+                      <td>String</td>
+                      <td>'bottom'</td>
+                      <td>滚轮显示位置</td>
+                  </tr>
+                  <tr>
+                      <td>headResult</td>
+                      <td>Bool</td>
+                      <td>false</td>
+                      <td>滚轮顶部栏目显示结果</td>
+                  </tr>
+                  <tr>
+                      <td>date</td>
+                      <td>Bool</td>
+                      <td>true</td>
+                      <td>是否显示日期</td>
+                  </tr>
+                  <tr>
+                      <td>time</td>
+                      <td>Bool</td>
+                      <td>true</td>
+                      <td>是否显示时间</td>
+                  </tr>
+                  <tr>
+                      <td>beginYear</td>
+                      <td>Number</td>
+                      <td>new Date().getFullYear()-100</td>
+                      <td>开始年份</td>
+                  </tr>
+                  <tr>
+                      <td>endYear</td>
+                      <td>Number</td>
+                      <td>new Date().getFullYear()+100</td>
+                      <td>结束年份</td>
+                  </tr>
+                  <tr>
+                      <td>save</td>
+                      <td>Function</td>
+                      <td>*</td>
+                      <td>点击确定</td>
+                  </tr>
+                  <tr>
+                      <td>cancel</td>
+                      <td>Function</td>
+                      <td>*</td>
+                      <td>点击取消</td>
+                  </tr>
+                  </tbody>
+              </table>
+              <div class="title">examples</div>
+              <pre><code class="language-javascript">
+//Picker
+new popoPicker('.js-picker',{
+    container:'.screen',
+    wheels: [{
+        infinite: false,
+        selected: 3,
+        data:[
+            {value:0,display:'选项一'},
+            {value:1,display:'选项二'},
+            {value:2,display:'选项三'},
+            {value:3,display:'选项四'},
+            {value:4,display:'选项五'},
+            {value:5,display:'选项六'},
+            {value:6,display:'选项七'}
+        ]
+    }],
+    background:'dark'
+});
+
+//Date
+new popoDateTime('.js-date',{
+   container:'.screen',
+   time: false
+});
+
+//Time
+new popoDateTime('.js-time',{
+   container:'.screen',
+   date: false
+});
+
+//DateTime
+new popoDateTime('.js-datetime',{
+   container:'.screen',
+});
+</code></pre>
+          </div>
+       </div>
+   </div>
+</div>
+
+
+<script src="js/popoPicker.js?v123"></script>
+<script src="js/prism.js"></script>
+<script>
+
+    //Picker
+    new popoPicker('.js-picker',{
+        container:'.screen',
+        wheels: [{
+            infinite: false,
+            //selected: 3,
+            data:[
+                {value:0,display:'选项一'},
+                {value:1,display:'选项二'},
+                {value:2,display:'选项三'},
+                {value:3,display:'选项四'},
+                {value:4,display:'选项五'},
+                {value:5,display:'选项六'},
+                {value:6,display:'选项七'}
+
+            ]
+        }],
+        background:'light'
+    });
+
+    //Date
+   new popoDateTime('.js-date',{
+       container:'.screen',
+       time: false,
+       background: 'dark'
+   });
+
+   //Time
+   new popoDateTime('.js-time',{
+       container:'.screen',
+       date: false,
+       background: 'dark'
+   });
+
+   //DateTime
+   new popoDateTime('.js-datetime',{
+       container:'.screen',
+       background: 'dark'
+   });
+
+   //scroll
+    var box = document.querySelector('.phone-box');
+    document.addEventListener('scroll',function(){
+        if(st>390){
+            box.className='phone-box fixed';
+        }else{
+            box.className='phone-box';
+        }
+    },false)
+</script>
+
+</body>
+</html>
