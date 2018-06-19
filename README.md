@@ -10,7 +10,7 @@
 ## 如何使用
 ```html
 <!-- 引入样式 -->
-<link href="css/popoPicker.css" rel="stylesheet">
+<link href="popoPicker.css" rel="stylesheet">
 
 <!-- 引入脚本 -->
 <script src='popodatetime.js'></script>
