@@ -60,7 +60,7 @@ new popoDateTime('.js-datetime',{
 |wheels|Array|[]|wheels为滚轮的数据内容,例如：wheels: [{ infinite: false, selected: 3, data:[ {value:0,display:'选项一'}]}] infinit: bool 是否无限循环滚轮；selected: Number 选中的value；data: Array 滚轮数据|
 |container|String|'body'|选择器所在的父级|
 |scrollType|String|'3d'|滚轮的显示模式，分2d,和3d||
-|background|String|'light'|主题背景颜色|
+|background|String|'light'|主题背景颜色'light'和'dark'|
 |display|String	'bottom'|滚轮显示位置|
 |headTitle|String|''|滚轮顶部标题|
 |init|Function|*|初始加载完成后执行|
@@ -74,7 +74,7 @@ new popoDateTime('.js-datetime',{
 | ------------ | ------------ | ------------ | ------------ |
 |container|String|'body'|选择器所在的父级|
 |scrollType|String|'3d'|滚轮的显示模式，分2d,和3d|
-|background|String|'light'|主题背景颜色|
+|background|String|'light'|主题背景颜色'light'和'dark'|
 |labelType|String|'symbol'|滚轮label 类型有symbol符号，text文字，split分割线(需date和time同时存在)|
 |display|String|'bottom'|滚轮显示位置|
 |headResult|Bool|false|滚轮顶部栏目显示结果|
