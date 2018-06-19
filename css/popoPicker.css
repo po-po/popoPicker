@@ -35,7 +35,7 @@
 .p-select-main{
     display: -webkit-flex;
     -webkit-flex-direction: column;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
