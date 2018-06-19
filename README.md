@@ -1,6 +1,6 @@
 ## 项目简介 [在线预览](https://po-po.github.io/popoPicker/ "Demo")
 
-- popoPicker是一个仿ios的3D滚轮选择器，支持无限循环滚动，采用原生js，不依赖任何第三方库，速度更快；
+- popoPicker是一个仿iOS的3D滚轮选择器，支持无限循环滚动，采用原生js，不依赖任何第三方库，速度更快；
 
 - popoDatetime是建立在popoPicker之上的3D日期时间选择器，可自定义滚动循环，背景主题、位置等信息，具备时间选择、日期选择、日期时间同时选择的功能，具体配置请阅读参数文档。
 
