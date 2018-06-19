@@ -157,6 +157,9 @@ body{
 .content .tb-wrap .tb tr:nth-child(odd) td{
     background-color: #fff;
 }
+.content .p-select-main{
+    position: absolute;
+}
 
 @media (max-width: 768px){
     .page-header{
