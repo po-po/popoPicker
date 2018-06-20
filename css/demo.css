@@ -47,7 +47,8 @@ body{
     max-width: 900px;
     padding: 15px 0 30px;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-weight: normal;
 }
 
 .content{
