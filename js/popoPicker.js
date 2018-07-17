@@ -716,7 +716,7 @@
                 {
                     infinite: true,
                     selected: addZero(day),
-                    label:"&emsp;",
+                    label:"",
                     data: dayData
                 },
                 {
