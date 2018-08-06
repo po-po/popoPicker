@@ -245,7 +245,7 @@ new popoDateTime('.js-datetime',{
 </div>
 
 
-<script src="js/popoPicker.js?v123"></script>
+<script src="dist/bundle.js"></script>
 <script src="js/prism.js"></script>
 <script>
     //Picker
@@ -287,17 +287,6 @@ new popoDateTime('.js-datetime',{
        container:'.screen',
        background: 'dark'
    });
-
-   //scroll
-    var box = document.querySelector('.phone-box');
-    document.addEventListener('scroll',function(){
-        var st = document.documentElement.scrollTop;
-        if(st>390){
-            box.className='phone-box fixed';
-        }else{
-            box.className='phone-box';
-        }
-    },false)
 </script>
 
 </body>

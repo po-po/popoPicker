@@ -84,11 +84,6 @@ body{
     height: 750px;
     width:380px;
 }
-.content .phone-box.fixed{
-    position: fixed;
-    top: 0;
-    margin-top: 15px;
-}
 .content .phone-box:before{
     content: "";
     position: absolute;

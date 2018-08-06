@@ -377,9 +377,8 @@
                             item.innerText = display;
                             item.style.webkitTransform = "rotateX(" + deg + "deg) translateZ(" + (itemHeight * rows / 2) + "px)";
                         }
-
                     }
-
+                    
                     //2d margin-top
                     this.opt.marginTop += diff * itemHeight;
                     this.opt.scrollEl2d.style.marginTop = this.opt.marginTop + "px";
@@ -882,5 +881,4 @@
 
     window.popoPicker = popoPicker;
     window.popoDateTime = popoDateTime;
-
 })(window,document);
