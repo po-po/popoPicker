@@ -1,5 +1,5 @@
 .p-scroll{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -35,7 +35,7 @@
 .p-select-main{
     display: -webkit-flex;
     -webkit-flex-direction: column;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
