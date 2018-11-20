@@ -25,7 +25,7 @@
                <div class="screen">
                    <header><p>popopicker</p></header>
                    <div class="tit">Picker</div>
-                   <input class="inp js-picker" data-value="3" placeholder="请选择选项">
+                   <input class="inp js-picker" placeholder="请选择选项">
                    <div class="tit">Date</div>
                    <input class="inp js-date" placeholder="请选择日期">
                    <div class="tit">Time</div>
@@ -208,7 +208,7 @@ new popoPicker('.js-picker',{
     container:'.screen',
     wheels: [{
         infinite: false,
-        selected: 3,
+        //selected: 3,
         data:[
             {value:0,display:'选项一'},
             {value:1,display:'选项二'},
@@ -287,7 +287,8 @@ new popoDateTime('.js-datetime',{
        container:'.screen',
        background: 'dark'
    });
-</script>
 
+
+</script>
 </body>
 </html>
